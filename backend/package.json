@@ -1,0 +1,45 @@
+{
+  "name": "expert-custos-backend",
+  "version": "3.0.0",
+  "description": "Backend para Expert em Análise de Custos - Julitago Bioenergia",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "db:push": "drizzle-kit push:pg",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:studio": "drizzle-kit studio",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@trpc/server": "^10.45.1",
+    "@trpc/express": "^10.45.1",
+    "zod": "^3.22.4",
+    "drizzle-orm": "^0.29.1",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.1.2",
+    "bcrypt": "^5.1.1",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.5",
+    "xlsx": "^0.18.5",
+    "anthropic": "^0.24.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6",
+    "@types/express": "^4.17.21",
+    "@types/bcrypt": "^5.0.2",
+    "tsx": "^4.7.0",
+    "drizzle-kit": "^0.20.13",
+    "vitest": "^1.1.0",
+    "@types/vitest": "^1.0.0"
+  }
+}
